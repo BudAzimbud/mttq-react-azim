@@ -1,13 +1,46 @@
-@import './base/bootstrap.scss';
-@import './base/bootstrap-extended.scss';
-@import './base/colors.scss';
-@import './base/components.scss';
+@import "./base/bootstrap.scss";
+@import "./base/bootstrap-extended.scss";
+@import "./base/colors.scss";
+@import "./base/components.scss";
 
 // Themes
-@import './base/themes/dark-layout.scss';
-@import './base/themes/bordered-layout.scss';
-@import './base/themes/semi-dark-layout.scss';
+@import "./base/themes/dark-layout.scss";
+@import "./base/themes/bordered-layout.scss";
+@import "./base/themes/semi-dark-layout.scss";
 // @import './base/custom-rtl.scss';
 
 // React Specific
-@import 'react/index';
+@import "react/index";
+
+.wrapper-input-search{
+    background-color: #283044;
+    display: flex;
+    align-items: center;
+    padding:7px 8px !important;
+    justify-content: space-between;
+    width: 100%;
+    .input-search {
+        background-color: #283044;
+        border: 0;
+        color: white;
+        outline: none;
+        font-size: 12px;
+      
+        &::placeholder {
+          color: white;
+          opacity: 1; /* Firefox */
+        }
+      
+        &::-ms-input-placeholder {
+          /* Edge 12 -18 */
+          color: white;
+        }
+
+        &:focus{
+            border:0;
+        }
+        
+      }
+}
+
+

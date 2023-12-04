@@ -112,7 +112,6 @@
 
   // main navbar and header navbar shadow(generic navbar)
   .header-navbar-shadow {
-    background: linear-gradient(180deg, rgba(22, 29, 49, 0.9) 44%, rgba(22, 29, 49, 0.43) 73%, rgba(22, 29, 49, 0));
   }
 
   // main header navbar dark style
@@ -136,7 +135,7 @@
     }
   }
   .header-navbar {
-    background-color: $theme-dark-card-bg;
+    background-color: #161D31;
 
     .navbar-container {
       .nav {
@@ -306,15 +305,10 @@
 
   // main menu
   .main-menu {
-    background-color: $theme-dark-card-bg;
+    background-color: #161D31;
 
     .shadow-bottom {
-      background: linear-gradient(
-        180deg,
-        $theme-dark-card-bg 44%,
-        rgba($theme-dark-card-bg, 0.51) 73%,
-        rgba($theme-dark-card-bg, 0)
-      );
+      
     }
 
     &:not(.expanded) {
@@ -364,7 +358,7 @@
   // main menu content
   .main-menu-content {
     .navigation-main {
-      background-color: $theme-dark-card-bg;
+      background-color: #161D31;
 
       .navigation-header {
         color: $theme-dark-text-muted-color;
@@ -1553,7 +1547,7 @@
       border-color: $theme-dark-border-color !important;
     }
     .content-right {
-      border-color: $theme-dark-border-color !important;
+      // border-color: $theme-dark-border-color !important;
     }
   }
 

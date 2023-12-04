@@ -4,7 +4,7 @@
 .dark-layout {
   .bg-transparent.btn- {
     svg {
-      color: $theme-dark-body-color;
+      color: #161D31;
     }
   }
 
@@ -79,7 +79,7 @@
 
   // Apex Charts
   .apexcharts-gridlines-vertical line {
-    stroke: $theme-dark-border-color;
+    stroke: #161D31;
   }
 
   .horizontal-layout {
@@ -94,11 +94,11 @@
       .navbar-horizontal {
         ul.dropdown-menu {
           &::-webkit-scrollbar-thumb {
-            background: $theme-dark-body-bg;
+            // background: $theme-dark-body-bg;
           }
 
           &::-webkit-scrollbar-track {
-            background: $theme-dark-border-color;
+            // background: $theme-dark-border-color;
           }
         }
       }

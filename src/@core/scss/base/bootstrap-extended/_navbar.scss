@@ -66,7 +66,7 @@
   &.floating-nav {
     position: fixed;
     right: 0;
-    margin: #{$floating-nav-margin} auto 0;
+    margin: 1rem auto 0;
     width: calc(100vw - (100vw - 100%) - calc(#{$content-padding} * 2) - #{$menu-expanded-width});
     border-radius: $card-border-radius;
     z-index: 12;
@@ -397,16 +397,13 @@
   }
   .header-navbar-shadow {
     display: block;
-    background: linear-gradient(
-      180deg,
-      hsla(0, 0%, 97.3%, 0.95) 44%,
-      hsla(0, 0%, 97.3%, 0.46) 73%,
-      hsla(0, 0%, 100%, 0)
-    );
+    background:#161D31;
+    border-bottom:0.1px solid rgb(72, 72, 72);
     padding-top: 2.2rem;
+    padding-bottom: 1px;
     background-repeat: repeat;
     width: 100%;
-    height: 102px;
+    height: 80px;
     position: fixed;
     top: 0;
     left: 0;

@@ -17,12 +17,7 @@
   .main-menu {
     background-color: $theme-dark-card-bg;
     .shadow-bottom {
-      background: linear-gradient(
-        180deg,
-        $theme-dark-card-bg 44%,
-        rgba($theme-dark-card-bg, 0.51) 73%,
-        rgba($theme-dark-card-bg, 0)
-      );
+     
     }
     &:not(.expanded) {
       .navigation {
@@ -101,7 +96,7 @@
       .navigation-main {
         li.active {
           > a {
-            background: $theme-dark-body-bg !important;
+            background: #161D31 !important;
             color: $white !important;
           }
         }
