@@ -9,6 +9,6 @@ export default [
     id: 'history',
     title: 'History',
     icon: <Database size={20} />,
-    navLink: '/dashboard'
+    navLink: '/history'
   },
 ]

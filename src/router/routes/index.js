@@ -1,34 +1,34 @@
-import { lazy } from 'react'
+import { lazy } from "react";
 
 // ** Document title
-const TemplateTitle = '%s - Expo'
+const TemplateTitle = "%s - Expo";
 
 // ** Default Route
-const DefaultRoute = '/home'
+const DefaultRoute = "/dashboard";
 
 // ** Merge Routes
 const Routes = [
   {
-    path: '/home',
-    component: lazy(() => import('../../views/Home'))
+    path: "/dashboard",
+    component: lazy(() => import("../../views/Dashboard")),
   },
   {
-    path: '/second-page',
-    component: lazy(() => import('../../views/SecondPage'))
+    path: "/fuel-transaction-history",
+    component: lazy(() => import("../../views/FuelTransaction")),
   },
   {
-    path: '/login',
-    component: lazy(() => import('../../views/Login')),
-    layout: 'BlankLayout',
+    path: "/login",
+    component: lazy(() => import("../../views/Login")),
+    layout: "BlankLayout",
     meta: {
-      authRoute: true
-    }
+      authRoute: true,
+    },
   },
   {
-    path: '/error',
-    component: lazy(() => import('../../views/Error')),
-    layout: 'BlankLayout'
-  }
-]
+    path: "/error",
+    component: lazy(() => import("../../views/Error")),
+    layout: "BlankLayout",
+  },
+];
 
-export { DefaultRoute, TemplateTitle, Routes }
+export { DefaultRoute, TemplateTitle, Routes };

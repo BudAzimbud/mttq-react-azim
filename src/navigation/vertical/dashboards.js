@@ -11,5 +11,4 @@ export default [
     icon: <Home size={20} />,
     navLink: '/dashboard'
   },
- 
 ]

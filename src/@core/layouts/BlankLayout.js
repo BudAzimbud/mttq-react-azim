@@ -31,7 +31,8 @@ const BlankLayout = ({ children }) => {
     >
       <div className='app-content content'>
         <div className='content-wrapper'>
-          <div className='content-body'>{children}</div>
+          <div className='content-body'>
+            {children}</div>
         </div>
       </div>
     </div>
