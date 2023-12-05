@@ -1,0 +1,57 @@
+{
+  "realtime": [
+    {
+      "name": "Pertamax Turbo",
+      "current_stock": 200,
+      "maximum_stock": 200,
+      "status": "FILLING",
+      "updated_at": "2023-11-29 09:26:23"
+    },
+    {
+      "name": "Pertalite",
+      "current_stock": 40,
+      "maximum_stock": 200,
+      "status": "Stand BY",
+      "updated_at": "2023-11-29 09:26:23"
+    },
+    {
+      "name": "Pertamina",
+      "current_stock": 110,
+      "maximum_stock": 200,
+      "status": "Stand BY",
+      "updated_at": "2023-11-29 09:26:23"
+    },
+    {
+      "name": "Solar",
+      "current_stock": 200,
+      "maximum_stock": 200,
+      "status": "FILLING",
+      "updated_at": "2023-11-29 09:26:23"
+    }
+  ],
+  "top-5-car-usage": [
+    {
+      "name": "Car 1",
+      "usage": 100
+    },
+    {
+      "name": "Car 2",
+      "usage": 20
+    }
+  ],
+  "fuel-usage": [
+    {
+      "name": "Pertalite",
+      "usage": 4000
+    },
+    {
+      "name": "Pertalite",
+      "usage": 2000
+    }
+  ],
+  "fuel-transaction": [
+    {
+      "updated_at": "2023-11-29 09:26:23"
+    }
+  ]
+}
