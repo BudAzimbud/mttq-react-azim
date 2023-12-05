@@ -13,21 +13,23 @@ function CardHighlight({ sliderPerView = 0, spaceBetween = 20, data = [] }) {
   }
 
   const conditionStock = (current_stock, maximum_stock) => {
-    if (maximum_stock % current_stock > 0.75) {
+    console.log({maximum_stock , current_stock})
+    console.log(maximum_stock / current_stock)
+    if (current_stock / maximum_stock > 0.75) {
       return {
         style: "success",
         status: "Standby",
       };
     }
 
-    if (maximum_stock % current_stock > 0.5) {
+    if (current_stock / maximum_stock >= 0.5) {
       return {
         style: "warning",
         status: "Standby",
       };
     }
 
-    if (maximum_stock % current_stock < 0.5) {
+    if (current_stock / maximum_stock < 0.5) {
       return {
         style: "danger",
         status: "Filling",
@@ -35,8 +37,6 @@ function CardHighlight({ sliderPerView = 0, spaceBetween = 20, data = [] }) {
     }
   };
   return (
-    <Row>
-      <Col>
         <Swiper {...swiperParams}>
           {data.map((item, idx) => (
             <Card
@@ -73,8 +73,6 @@ function CardHighlight({ sliderPerView = 0, spaceBetween = 20, data = [] }) {
 
           {/* Add more cards as needed */}
         </Swiper>
-      </Col>
-    </Row>
   );
 }
 

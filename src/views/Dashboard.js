@@ -36,7 +36,7 @@ const Home = () => {
       </Breadcrumb>
       <CardHighlight
         data={realtimeData}
-        sliderPerView={realtimeData.length + 1}
+        sliderPerView={3}
       />
 
       <Row>

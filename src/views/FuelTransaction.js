@@ -29,27 +29,27 @@ const columns = [
   },
   {
     name: "Licensse",
-    selector: (row) => row.name,
+    selector: (row) => row.license,
     sortable: true,
   },
   {
     name: "Code",
-    selector: (row) => row.name,
+    selector: (row) => row.code,
     sortable: true,
   },
   {
     name: "Fuel",
-    selector: (row) => row.name,
+    selector: (row) => row.fuel,
     sortable: true,
   },
   {
     name: "Fuel Usage(L)",
-    selector: (row) => row.name,
+    selector: (row) => row.fuel_usage,
     sortable: true,
   },
   {
     name: "Left Over(L)",
-    selector: (row) => row.name,
+    selector: (row) => row.left_over,
     sortable: true,
   },
 ];
@@ -79,7 +79,17 @@ export default function FuelTranasction() {
         pagination
         fixedHeader
         columns={columns}
-        data={[{}]}
+        data={Array.from({ length: 40 }, (_, index) => ({
+          id: index+1,
+          time: "3 Sep 2023",
+          station: "Statation 1",
+          name: "andrew",
+          license: "B 1235 K",
+          code: "20130",
+          fuel: "Pertalite",
+          fuel_usage: 4,
+          left_over: 140,
+        }))}
         customStyles={{
           headCells: {
             style: {
