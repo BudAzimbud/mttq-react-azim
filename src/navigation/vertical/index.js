@@ -1,7 +1,7 @@
-// ** Navigation imports
-import modules from './modules'
 import dashboards from './dashboards'
-import system from './system'
-
+import history from './history'
+import management from './management'
+import profile from './profile'
+import report from './report'
 // ** Merge & Export
-export default [...dashboards, ...modules, ...system]
+export default [...dashboards,...report,...history,...management,...profile]
